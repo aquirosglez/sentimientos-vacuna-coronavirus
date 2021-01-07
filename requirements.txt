@@ -2,3 +2,15 @@ tweepy
 pandas
 preprocessor
 geopy
+numpy
+scipy
+joblib
+nltk
+wheel
+imutils
+marisa-trie
+six
+IPython
+scikit-learn==0.22
+spanish_sentiment_analysis
+matplotlib
