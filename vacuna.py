@@ -101,6 +101,7 @@ mask3 = ((2/3<sent_array) & (sent_array<1))
 plt.bar(sentiment['CA'].unique()[mask1],sent_array[mask1], color='red')
 plt.bar(sentiment['CA'].unique()[mask2],sent_array[mask2], color='grey')
 plt.bar(sentiment['CA'].unique()[mask3],sent_array[mask3], color='green')
+plt.xticks(rotation=90)
 plt.show(block=False)
 
 
