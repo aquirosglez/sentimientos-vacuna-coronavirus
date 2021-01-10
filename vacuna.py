@@ -37,8 +37,8 @@ for i in range(0,17):
   rad = bbox['Radius'][i]
   ruta = my_path+place+'.txt'
   geocode = str (geo.latitude) + ',' + str (geo.longitude) + ',' + str (rad) + 'km'
-
-  for tweet in tweepy.Cursor(api.search, q=search, lang="es", geocode=geocode, tweet_mode='extended', include_rts=False).items(400):
+'''
+  for tweet in tweepy.Cursor(api.search, q=search, lang="es", geocode=geocode, tweet_mode='extended', include_rts=False).items(200):
     if (tweet.in_reply_to_status_id_str is None):
       f  = open(ruta, "a") 
       txt = re.sub("RT @[\w]*:","",tweet._json["full_text"])
@@ -54,7 +54,7 @@ for i in range(0,17):
       txt = re.sub("\n","",txt)    
       f.write(txt + '\n')
       f.close()
-
+'''
 from classifier import SentimentClassifier
 
 
@@ -90,18 +90,37 @@ for i in sentiment['CA'].unique():
   df = sentiment[sentiment['CA']==i]
   sent.append(np.mean(df['Polaridad']))
 sent_array = np.asarray(sent)
-sent_array=sent_array+0.2
+param=0
+sent_array=sent_array+param
+
+
+tabla = pd.DataFrame([sentiment['CA'].unique(),sent_array])
+tabla = tabla.T
+tabla.rename(columns={0:'CA',1:'Sentimiento'},inplace=True)
+tabla=tabla.sort_values('Sentimiento')
+
+tabla['Sentimiento']=tabla['Sentimiento']-0.5
+tabla['Sentimiento']=tabla['Sentimiento']*2
+
+
+mask1 = ((-1<=tabla['Sentimiento']) & (tabla['Sentimiento']<-1/3))
+mask2 = ((-1/3<=tabla['Sentimiento']) & (tabla['Sentimiento']<=1/3))
+mask3 = ((1/3<tabla['Sentimiento']) & (tabla['Sentimiento']<1))
+
+
+
+
+
 import matplotlib.pyplot as plt
-plt.figure(figsize=(20,8))
-mask1 = ((0<=sent_array) & (sent_array<1/3))
-mask2 = ((1/3<=sent_array) & (sent_array<=2/3))
-mask3 = ((2/3<sent_array) & (sent_array<1))
+plt.figure(figsize=(20,6))
 #plt.bar(range(0,17),sent)
 #plt.xticks(np.arange(0, 17),labels=sentiment['CA'].unique())
-plt.bar(sentiment['CA'].unique()[mask1],sent_array[mask1], color='red')
-plt.bar(sentiment['CA'].unique()[mask2],sent_array[mask2], color='grey')
-plt.bar(sentiment['CA'].unique()[mask3],sent_array[mask3], color='green')
+plt.bar(tabla['CA'][mask1],tabla['Sentimiento'][mask1], color='red',label="Opinión negativa")
+plt.bar(tabla['CA'][mask2],tabla['Sentimiento'][mask2], color='grey',label="Opinión neutra")
+plt.bar(tabla['CA'][mask3],tabla['Sentimiento'][mask3], color='green',label="Opinión positiva")
 plt.xticks(rotation=90)
+plt.grid(axis='y')
+plt.legend()
 plt.show(block=False)
 
 
@@ -115,6 +134,10 @@ ratio_vacu = [(k / l)*100 for k, l in zip(vacunados, poblacion)]
 covid = pd.DataFrame([sentiment['CA'].unique(),ratio,ratio_vacu, sent])
 covid = covid.T
 covid.rename(columns={0:'CA',1:'Ratio contagiados%',2:'Ratio Vacunados %',3:'Polaridad'},inplace=True)
+covid=covid.sort_values('Polaridad')
+covid['Polaridad']=covid['Polaridad']-0.5
+covid['Polaridad']=covid['Polaridad']*2
+covid['Polaridad']=covid['Polaridad']+param
 print(covid)
 
 
