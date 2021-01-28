@@ -92,12 +92,7 @@ Vemos que pasado 22 días, mejora la consideración de la vacuna de forma genera
 ## **Conclusiones**
 
 
-Primeros datos son del 2 de enero de 2021, capturando los tweets hasta siete días atrás, muy cercano a la fecha de comienzo de vacunación)
-
-Lo comparamos con los datos del 24 de enero de 2021.
-
-Según hemos podido comprobar, los sentimientos con respecto a la vacuna van siendo cada vez más positivos, lo cual puede deberse al repunte de casos después de las fiestas de Navidad.
-
+Los primeros datos son del 2 de enero de 2021, capturando los tweets hasta siete días atrás, muy cercano a la fecha de comienzo de vacunación. Cómo hemos visto en la sección de [Resultados](Resultados) al principio había cierta negación a la vacunación o opiniones negativas en cuanto a la organización de ésta. Esta tendencia ha cambiado, aumentando el agrado hacia la vacuna varias semanas después (entre el 18 y el 24 de enero), tras ver que el proceso de vacunación se está haciendo y no hay graves altercados con ella.
 
 Sin embargo, en los últimos días hemos podido ver algunas noticias que pueden suponer sentimientos más negativos respecto a la vacuna...
 
