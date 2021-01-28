@@ -80,11 +80,14 @@ Como podemos observar en el análisis de sentimientos entre el 27 de diciembre d
 ![Figure_2_enero_2021](IMAGENES/Figure_2_enero_2021.jpeg)
 
 También se representa una relación entre el ratio de contagiados y la polaridad, representando por puntos las diferentes Comunidades Autónomas, en los márgenes, podemos ver el histograma.
+
 ![Figure_2](IMAGENES/Figure_2.jpeg)
+
+Vemos que pasado 22 días, mejora la consideración de la vacuna de forma general, aspecto que también se ha reflejado en las noticias durante esos días:
 
 ![Figure_24_enero_2021](IMAGENES/Figure_24_enero_2021.jpeg)
 
-
+![Figure_3](IMAGENES/Figure_3.jpeg)
 
 ## **Conclusiones**
 
