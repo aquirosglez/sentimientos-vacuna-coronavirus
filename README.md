@@ -96,3 +96,7 @@ Según hemos podido comprobar, los sentimientos con respecto a la vacuna van sie
 
 
 Sin embargo, en los últimos días hemos podido ver algunas noticias que pueden suponer sentimientos más negativos respecto a la vacuna...
+
+<img src="IMAGENES/astra_ue.JPG"  width="900" height="300">
+
+**Vamos a comprobarlo**
