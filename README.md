@@ -51,6 +51,7 @@ Adicionalmente, para hacer un estudio más detallado y poder realizar unas concl
 
 Con estos datos, y conociendo la población que tiene cada Comunidad Autónoma se ha obtenido el ratio de personas contagiadas y vacunadas.
 
+![Tabla](IMAGENES/Tabla.png)
 
 
 **FASE 5.- Representación de los datos calculados y obtenidos**
@@ -75,7 +76,6 @@ pip install -r requirements.txt
 
 ## **Conclusiones**
 
-![Tabla](IMAGENES/Tabla.png)
 
 Primeros datos son del 2 de enero de 2021, capturando los tweets hasta siete días atrás, muy cercano a la fecha de comienzo de vacunación)
 
