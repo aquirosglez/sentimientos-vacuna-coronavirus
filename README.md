@@ -47,7 +47,7 @@ Después de evaluar cada tweet, se ha hecho la media de la polaridad que se expr
 
 **FASE 4.- Obtención de los datos de casos de Covid-19 y de número de personas vacunadas**
 
-Adicionalmente, para hacer un estudio más detallado y poder realizar unas conclusiones más detalladas, hemos introducido los casos de Covid-19 que había en cada Comunidad Autónoma el día X de diciembre de 2020. También, el número de vacunados. Los datos han sido obtenidos de la [página web de RTVE](https://www.rtve.es/noticias/20210128/mapa-del-coronavirus-espana/2004681.shtml).
+Adicionalmente, para hacer un estudio más detallado y poder realizar unas conclusiones más detalladas, hemos introducido los casos de Covid-19 que había en cada Comunidad Autónoma el día 7 de enero de 2021. También, el número de vacunados. Los datos han sido obtenidos de la [página web de RTVE](https://www.rtve.es/noticias/20210128/mapa-del-coronavirus-espana/2004681.shtml).
 
 Con estos datos, y conociendo la población que tiene cada Comunidad Autónoma se ha obtenido el ratio de personas contagiadas y vacunadas.
 
@@ -67,8 +67,8 @@ pip install -r requirements.txt
 
 ## **Resultados**
 
+[](Figure_24_enero_2021.jpeg)
 
-(insertar imágenes)
 
 
 
