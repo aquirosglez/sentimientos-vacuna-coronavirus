@@ -67,11 +67,15 @@ pip install -r requirements.txt
 
 ## **Resultados**
 
+![Figure_2_enero_2021](IMAGENES/Figure_2_enero_2021.jpeg)
 
-![Figure_24_enero_2021](Figure_24_enero_2021.jpeg)
+![Figure_24_enero_2021](IMAGENES/Figure_24_enero_2021.jpeg)
+
 
 
 ## **Conclusiones**
+
+![Tabla](IMAGENES/Tabla)
 
 Primeros datos son del 2 de enero de 2021, capturando los tweets hasta siete días atrás, muy cercano a la fecha de comienzo de vacunación)
 
