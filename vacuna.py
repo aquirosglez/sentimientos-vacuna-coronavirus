@@ -83,8 +83,6 @@ for i in sentiment['CA'].unique():
   df = sentiment[sentiment['CA']==i]
   sent.append(np.mean(df['Polaridad']))
 sent_array = np.asarray(sent)
-sent_array=sent_array+param
-
 
 tabla = pd.DataFrame([sentiment['CA'].unique(),sent_array])
 tabla = tabla.T
