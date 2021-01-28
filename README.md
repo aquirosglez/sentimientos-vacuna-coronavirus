@@ -68,6 +68,8 @@ pip install -r requirements.txt
 
 ## **Resultados**
 
+Como podemos observar en el análisis de sentimientos entre el 27 de diciembre del 2020 y el 2 de enero de 2021, las opiniones eran más negativas sobre el proceso de vacunación, destacando sobre todo la desconfianza, la crítica por no haer aumentado la plantilla para la vacunación y la mala organización de ésta:
+
 ![Figure_2_enero_2021](IMAGENES/Figure_2_enero_2021.jpeg)
 
 ![Figure_2](IMAGENES/Figure_2.jpeg)
