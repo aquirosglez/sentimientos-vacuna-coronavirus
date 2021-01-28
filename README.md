@@ -23,7 +23,7 @@ Para la implementación del proyecto, se ha utilizado:
 
 ## **Desarrollo del proyecto**
 
-El proyecto se ha realizado en python (VERSIÓN CONCRETA 3....) y se ha dividido en diferentes fases:
+El proyecto se ha realizado en python 3 y se ha dividido en diferentes fases:
 
 
 **FASE 1.- Dataset de las Comunidades Autónomas**
@@ -92,5 +92,7 @@ Primeros datos son del 2 de enero de 2021, capturando los tweets hasta siete dí
 
 Lo comparamos con los datos del 24 de enero de 2021.
 
+Según hemos podido comprobar, los sentimientos con respecto a la vacuna van siendo cada vez más positivos, lo cual puede deberse al repunte de casos después de las fiestas de Navidad.
 
 
+Sin embargo, en los últimos días hemos podido ver algunas noticias que pueden suponer sentimientos más negativos respecto a la vacuna...
