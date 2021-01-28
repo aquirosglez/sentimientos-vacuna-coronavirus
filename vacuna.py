@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
-
 import os, sys
 import pandas as pd
 
@@ -56,9 +52,6 @@ for i in range(0,17):
       f.close()
 
 from classifier import SentimentClassifier
-
-
-
 
 sc = SentimentClassifier()
 ca = []
