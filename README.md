@@ -98,4 +98,14 @@ Sin embargo, en los últimos días hemos podido ver algunas noticias que pueden 
 
 <img src="IMAGENES/astra_ue.JPG"  width="900" height="300">
 
-**Vamos a comprobarlo**
+Vamos a comprobarlo
+
+
+
+## **Autores**
+
+•	Isabel Carnoto Amat
+
+•	Alejandro Quirós González
+
+•	Pablo Ruiz Palacios
