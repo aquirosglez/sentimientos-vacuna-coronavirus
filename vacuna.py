@@ -140,7 +140,5 @@ import seaborn as sns
 sns.jointplot(data=covid,x='Ratio contagiados%',y='Polaridad',height=5, ratio=2, marginal_ticks=True)
 print(covid)
 
-
-
 plt.show()
 print("FIN DEL PROGRAMA")
