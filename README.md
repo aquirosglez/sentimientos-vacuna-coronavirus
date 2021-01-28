@@ -66,7 +66,7 @@ Finalmente se ha representado el análisis de sentimientos obtenidos, junto con 
 
 ## **Ejecución del proyecto**
 
-Se ejecuta como un programa normal de python, pero **antes** es necesario tener descargado los archivos ``` bbox_spain.txt ``` y ```requiremets.txt```. Después, ejecutar en línea de comandos:
+Se ejecuta el archivo ```vacuna.py``` como un programa normal de python, pero **antes** es necesario tener descargado los archivos ``` bbox_spain.txt ``` y ```requiremets.txt```. Después, ejecutar en línea de comandos:
 
 ```python
 pip install -r requirements.txt
