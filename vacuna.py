@@ -25,7 +25,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 from geopy.geocoders import Nominatim
 search= ['Vacuna covid' , 'vacuna coronavirus']
-geolocator = Nominatim(user_agent="vacuna_Pablo")
+geolocator = Nominatim(user_agent="vacuna")
 my_path = os.getcwd()
 my_path =my_path+'/Tweets/'
 if not os.path.exists(my_path):
@@ -90,7 +90,7 @@ for i in sentiment['CA'].unique():
   df = sentiment[sentiment['CA']==i]
   sent.append(np.mean(df['Polaridad']))
 sent_array = np.asarray(sent)
-param=0
+param=0.1
 sent_array=sent_array+param
 
 
@@ -138,6 +138,11 @@ covid=covid.sort_values('Polaridad')
 covid['Polaridad']=covid['Polaridad']-0.5
 covid['Polaridad']=covid['Polaridad']*2
 covid['Polaridad']=covid['Polaridad']+param
+covid.reset_index(drop=True,inplace=True)
+
+import seaborn as sns
+
+sns.jointplot(data=covid,x='Ratio contagiados%',y='Polaridad',height=5, ratio=2, marginal_ticks=True)
 print(covid)
 
 
