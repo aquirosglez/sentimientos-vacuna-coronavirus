@@ -37,7 +37,7 @@ for i in range(0,17):
   rad = bbox['Radius'][i]
   ruta = my_path+place+'.txt'
   geocode = str (geo.latitude) + ',' + str (geo.longitude) + ',' + str (rad) + 'km'
-'''
+
   for tweet in tweepy.Cursor(api.search, q=search, lang="es", geocode=geocode, tweet_mode='extended', include_rts=False).items(200):
     if (tweet.in_reply_to_status_id_str is None):
       f  = open(ruta, "a") 
@@ -54,7 +54,7 @@ for i in range(0,17):
       txt = re.sub("\n","",txt)    
       f.write(txt + '\n')
       f.close()
-'''
+
 from classifier import SentimentClassifier
 
 
@@ -90,7 +90,7 @@ for i in sentiment['CA'].unique():
   df = sentiment[sentiment['CA']==i]
   sent.append(np.mean(df['Polaridad']))
 sent_array = np.asarray(sent)
-param=0.1
+param=0
 sent_array=sent_array+param
 
 
