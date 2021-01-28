@@ -33,7 +33,8 @@ Lo primero que se ha realizado, ha sido una tabla con las diferentes comunidades
 
 **FASE 2.- Captura y almacenamiento de Tweets**
 
-Después, se ha capturado los tweets que tuvieran las palabras ```vacuna covid``` y/o ```vacuna coronavirus``` y que estuvieran en una región concreta (se ha iterado para así obtener el de todas las Comunidades Autónomas). A continuación, se crea un fichero con el nombre de la Comunidad Autónoma dentro de una carpeta llamada "Tweets" donde se almacenarán los tweets capturados previamente desechando aquéllos que únicamente son respuesta a éstos y depurándolos eliminando los emoticonos y otros caracteres especiales.
+Después, se ha capturado los tweets que tuvieran las palabras ```vacuna covid``` y/o ```vacuna coronavirus```, que estuvieran en una región concreta (se ha iterado para así obtener el de todas las Comunidades Autónomas) y solo tweets en español. A continuación, se crea un fichero con el nombre de la Comunidad Autónoma dentro de una carpeta llamada "Tweets" donde se almacenarán los tweets capturados previamente desechando aquéllos que únicamente son respuesta a éstos y depurándolos eliminando los emoticonos, banderas, enlaces, menciones (@usuario), señal de retweet (RT @usuario) y otros caracteres especiales.
+
 
 
 **FASE 3.- Análisis de sentimientos**
