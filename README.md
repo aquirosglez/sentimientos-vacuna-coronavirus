@@ -51,7 +51,13 @@ Adicionalmente, para hacer un estudio más detallado y poder realizar unas concl
 
 Con estos datos, y conociendo la población que tiene cada Comunidad Autónoma se ha obtenido el ratio de personas contagiadas y vacunadas.
 
+Datos tomados el 2 de Enero de 2021
+
 ![Tabla](IMAGENES/Tabla.png)
+
+Datos tomados el 26 de Enero de 2021
+
+![Tabla 2](IMAGENES/imagen2.png)
 
 
 **FASE 5.- Representación de los datos calculados y obtenidos**
