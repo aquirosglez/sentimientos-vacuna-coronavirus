@@ -53,7 +53,7 @@ Con estos datos, y conociendo la población que tiene cada Comunidad Autónoma s
 
 **Datos tomados el 2 de Enero de 2021**
 
-![Tabla](IMAGENES/Imagen1.PNG)
+![Tabla](IMAGENES/Imagen1.png)
 
 **Datos tomados el 26 de Enero de 2021**
 
