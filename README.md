@@ -70,6 +70,8 @@ pip install -r requirements.txt
 
 ![Figure_2_enero_2021](IMAGENES/Figure_2_enero_2021.jpeg)
 
+![Figure_2](IMAGENES/Figure_2.jpeg)
+
 ![Figure_24_enero_2021](IMAGENES/Figure_24_enero_2021.jpeg)
 
 
