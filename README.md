@@ -72,6 +72,7 @@ Como podemos observar en el análisis de sentimientos entre el 27 de diciembre d
 
 ![Figure_2_enero_2021](IMAGENES/Figure_2_enero_2021.jpeg)
 
+También se representa una relación entre el ratio de contagiados y la polaridad, representando por puntos las diferentes Comunidades Autónomas, en los márgenes, podemos ver el histograma.
 ![Figure_2](IMAGENES/Figure_2.jpeg)
 
 ![Figure_24_enero_2021](IMAGENES/Figure_24_enero_2021.jpeg)
