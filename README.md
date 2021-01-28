@@ -67,9 +67,8 @@ pip install -r requirements.txt
 
 ## **Resultados**
 
-[](Figure_24_enero_2021.jpeg)
 
-
+![Figure_24_enero_2021](Figure_24_enero_2021.jpeg)
 
 
 ## **Conclusiones**
