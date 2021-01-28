@@ -100,14 +100,8 @@ mask1 = ((-1<=tabla['Sentimiento']) & (tabla['Sentimiento']<-1/3))
 mask2 = ((-1/3<=tabla['Sentimiento']) & (tabla['Sentimiento']<=1/3))
 mask3 = ((1/3<tabla['Sentimiento']) & (tabla['Sentimiento']<1))
 
-
-
-
-
 import matplotlib.pyplot as plt
 plt.figure(figsize=(20,6))
-#plt.bar(range(0,17),sent)
-#plt.xticks(np.arange(0, 17),labels=sentiment['CA'].unique())
 plt.bar(tabla['CA'][mask1],tabla['Sentimiento'][mask1], color='red',label="Opinión negativa")
 plt.bar(tabla['CA'][mask2],tabla['Sentimiento'][mask2], color='grey',label="Opinión neutra")
 plt.bar(tabla['CA'][mask3],tabla['Sentimiento'][mask3], color='green',label="Opinión positiva")
@@ -115,7 +109,6 @@ plt.xticks(rotation=90)
 plt.grid(axis='y')
 plt.legend()
 plt.show(block=False)
-
 
 '''DATOS 2 de enero 2021'''
 casos = [416724,274817,62950,159615,64751,380406,105977,137410,81706,39030,28590,41847,43361,19139,113863,18765,28045]
@@ -132,8 +125,6 @@ vacunados = [ 174094,257976,50957, 108454,72676,201650,68522,104197,47835,23603,
 ratio = [(i / j)*100 for i, j in zip(casos, poblacion)]#covid = pd.DataFrame([casos,poblacion,sent])
 ratio_vacu = [(k / l)*100 for k, l in zip(vacunados, poblacion)]
 '''
-
-
 
 covid = pd.DataFrame([sentiment['CA'].unique(),ratio,ratio_vacu, sent])
 covid = covid.T
