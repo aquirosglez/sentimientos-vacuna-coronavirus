@@ -71,6 +71,7 @@ Se ejecuta el archivo ```vacuna.py``` como un programa normal de python, pero **
 ```python
 pip install -r requirements.txt
 ```
+Recuerda colocar tus claves y tokens de Twitter en el archivo ```vacuna.py``` antes de proceder con la ejecución.
 
 ## **Resultados**
 
