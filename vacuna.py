@@ -83,7 +83,6 @@ for i in sentiment['CA'].unique():
   df = sentiment[sentiment['CA']==i]
   sent.append(np.mean(df['Polaridad']))
 sent_array = np.asarray(sent)
-param=0
 sent_array=sent_array+param
 
 
@@ -132,7 +131,6 @@ covid.rename(columns={0:'CA',1:'Ratio contagiados%',2:'Ratio Vacunados %',3:'Pol
 covid=covid.sort_values('Polaridad')
 covid['Polaridad']=covid['Polaridad']-0.5
 covid['Polaridad']=covid['Polaridad']*2
-covid['Polaridad']=covid['Polaridad']+param
 covid.reset_index(drop=True,inplace=True)
 
 import seaborn as sns
